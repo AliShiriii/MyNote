@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android-extensions'
+    id "androidx.navigation.safeargs.kotlin"
 }
 
 android {
@@ -63,6 +65,17 @@ dependencies {
     //Coroutines
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$version_coroutine"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$version_coroutine"
+
+    //Navigation
+    implementation "androidx.navigation:navigation-runtime-ktx:$vertion_navigation"
+    implementation "androidx.navigation:navigation-fragment-ktx:$vertion_navigation"
+    implementation "androidx.navigation:navigation-ui-ktx:$vertion_navigation"
+
+    //LifeCycle
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-extensions:$version_lifecycle_extensions"
 
 
 }
