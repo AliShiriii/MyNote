@@ -32,6 +32,7 @@ data class Note(
     var color: String,
 ) {
     override fun toString(): String {
+
         return "$title : $dateTime"
     }
 }
