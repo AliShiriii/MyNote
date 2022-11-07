@@ -60,5 +60,9 @@ dependencies {
     //Scalable unit size
     implementation "com.intuit.sdp:sdp-android:$sdp_version"
 
+    //Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$version_coroutine"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$version_coroutine"
+
 
 }
